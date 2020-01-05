@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from calc_sunrise_sunset import calc_runrise_sunset
+from calc_sunrise_sunset import calc_sunrise_sunset
 from datetime import datetime, timedelta
 import os
 from picamera import PiCamera
@@ -26,7 +26,7 @@ os.mkdir(path)
 os.chdir(path)
 
 # Calculate time values
-(sunrise, sunset) = calc_runrise_sunset(date_time_now, ln, lat, tz)
+(sunrise, sunset) = calc_sunrise_sunset(date_time_now, ln, lat, tz)
 # Time delta helps create start/stop time no actually sunrise/sunset
 time_offset = timedelta(hours=0, minutes=40)
 start_time = sunrise - time_offset 
