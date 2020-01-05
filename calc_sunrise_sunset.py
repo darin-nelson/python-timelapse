@@ -17,7 +17,7 @@ def convert_from_utc(julian_date):
 	
 # Calculations inspired by the wiki page:
 # https://en.wikipedia.org/wiki/Sunrise_equation
-def calc_runrise_sunset(date, longitude, latitude, timeZone):
+def calc_sunrise_sunset(date, longitude, latitude, timeZone):
 	debug = False
 	# M = Mean anomoly
 	# C = Equation of center
